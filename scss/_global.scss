@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+
+//----------GLOBALES----------
+
+html{
+    font-size: 62%;
+    box-sizing: border-box;
+}
+
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+    font-family:'Noto Sans JP', sans-serif;
+    background: url(../images/fondonegro.png);
+}
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(146, 136, 136);
+}
+img{
+    width: 80%;
+    height: auto;
+    transition: all 1s;
+}
+    img:hover{
+        transform: rotate(10deg);}
+
+
+nav, .servicios, .presentacion, .footerContent{
+    width: 80%;
+    margin:auto;
+}
+
+.titulo-servicios, .presentacion{
+    margin-bottom: 10%;
+}
+
+//----------VARIABLES----------
+
+$fontP: 2rem;
+$fontH1: 3rem;
+$fontH2:2.5rem;
+$fontH3: 2rem;
+
+p{
+    font-size: $fontP;
+    color: rgb(146, 136, 136);
+}
+
+h1{
+    color: #fff;
+}
+h2{
+    color:#fff;
+    font-size: $fontH2;
+
+}
+
+h3{
+    color: #fff;
+    font-size: $fontH3;
+    font-weight: lighter;
+}
+
+.btn{
+    border: none;
+    border-radius: 2px;
+    padding: 0.7em 1.5em;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.btn-principal{
+    @extend .btn;
+    color: #fff;
+    background-color: rgb(180, 0, 0);
+    }
+    .btn-principal:hover{
+        transform: scale(1.1);
+        transition: .4s;
+    }
+
+.btn-secundario{
+    @extend .btn;
+    background-color: rgb(146, 136, 136);
+}
+.btn-secundario:hover{
+    transform: scale(1.1);
+        transition: .4s;
+}
+
+
+
+//----------MIXINS----------
+
+@mixin caja-flex($principal, $cruzado, $wrap) {
+    display: flex;
+    justify-content: $principal;
+    align-items: $cruzado;
+    flex-wrap: $wrap;
+
+    
+}

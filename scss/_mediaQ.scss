@@ -1,0 +1,42 @@
+//----------PANTALLA ANCHA----------
+
+@media(min-width: 1200px){
+    nav, .servicios, .footerContent, .presentacion{
+        width: 60%;
+        margin: auto;
+    }
+}
+
+
+//----------PANTALLA MEDIANA----------
+
+@media(max-width: 992px){
+    .presentacion, .tipo-servicios{
+        flex-wrap: wrap !important;
+
+    }
+    .presentacion div{
+        
+        text-align: center;
+        margin-bottom: 30px;
+
+    }
+
+    nav{
+        @include caja-flex(center, center, wrap);
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+}
+
+//----------PANTALLA PEQUEÑA----------
+
+@media(max-width: 420px){
+    .presentacion div{
+        text-align: center;
+        margin-bottom: 30px;
+        h1, p{
+            padding: 0;
+        }
+    }
+}
