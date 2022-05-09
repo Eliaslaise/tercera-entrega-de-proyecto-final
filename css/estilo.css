@@ -222,53 +222,6 @@ footer .footerContent {
   padding-bottom: 30px;
 }
 
-@media (min-width: 1200px) {
-  nav, .servicios, .footerContent, .presentacion {
-    width: 60%;
-    margin: auto;
-  }
-}
-
-@media (max-width: 992px) {
-  .presentacion, .tipo-servicios {
-    -ms-flex-wrap: wrap !important;
-        flex-wrap: wrap !important;
-  }
-  .presentacion div {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding-bottom: 20px;
-    padding-top: 20px;
-  }
-}
-
-@media (max-width: 420px) {
-  .presentacion div {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  .presentacion div h1, .presentacion div p {
-    padding: 0;
-  }
-}
-
-
-/*          G A L E R I A         */
-
-
 .galeria-container{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -358,4 +311,47 @@ grid-row-start: span 2;
 .galeria-item:nth-child(15){
   grid-column-start: span 1;
   grid-row-start: span 2;
+}
+
+@media (min-width: 1200px) {
+  nav, .servicios, .footerContent, .presentacion {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .presentacion, .tipo-servicios {
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+  }
+  .presentacion div {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .presentacion div {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .presentacion div h1, .presentacion div p {
+    padding: 0;
+  }
 }
