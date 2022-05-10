@@ -50,10 +50,27 @@ nav, .servicios, .presentacion, .footerContent {
 }
 
 p {
+
   font-size: 2rem;
   color: #928888;
 }
 
+.parrafoContacto{
+  background-color: rgba(184, 0, 0, 0.4);
+  margin: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 2rem;
+  color: #928888;
+  border-radius: 7px;
+}
+
+.parrafoContacto:hover{
+  transform: scale(1.05 , 1.1);
+  transition: 1s;
+}
 h1 {
   color: #fff;
 }
@@ -207,7 +224,7 @@ nav ul a:hover {
 
 .servicios .tipo-servicios i {
   font-size: 30px;
-  color: #b40000;
+  color: rgb(180, 0, 0);
 }
 
 footer {
@@ -220,6 +237,77 @@ footer .footerContent {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.MAPA{
+  width: 95%;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  box-sizing: border-box;
+}
+.MAPA1{
+  text-align: center;
+}
+form{
+width: 450px;
+margin: auto;
+background: rgba(180, 0, 0,0.2);
+padding: 10px 20px;
+box-sizing: border-box;
+margin-top: 100px;
+border-radius: 10px;
+margin-bottom: 100px;
+}
+
+.tituloContacto{
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.tituloFormulario{
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.mapaTitulo{
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+input, textarea{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 20px;
+  border: none;
+  background-color:#000000;
+color:#fff
+}
+
+textarea{
+min-height: 100px;
+max-height: 250px;
+max-width: 100%;
+}
+
+#BOTON {
+  background-color: #b40000;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+}
+#BOTON:hover{
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+  transition: 0.8s;
 }
 
 .galeria-container{
@@ -511,5 +599,8 @@ grid-row-start: span 2;
     .galeria-item:nth-child(15){
       grid-column-start: span 1;
       grid-row-start: span 2;
+}
+form{
+  width: 100%;
 }
 }
